@@ -1,10 +1,10 @@
 # geocoder_slim
 
-> This is a slimmed down and Dockerized version of the offline geocoder here: https://bitbucket.org/cole-brokamp/geocoder.
+> This is a slimmed down and Dockerized version of the offline geocoder here: https://github.com/cole-brokamp/geocoder.
 
 #### Install
 
-The image is hosted privately and can be pulled with `docker pull 126952269818.dkr.ecr.us-east-1.amazonaws.com/geocoder_slim`. This requires authorization through the amazon web services command line tools for the EC2 
+The image is hosted privately and can be pulled with `docker pull 126952269818.dkr.ecr.us-east-1.amazonaws.com/geocoder_slim`. This requires authorization through the amazon web services command line tools for the EC2
 container registry service. Contact the author for access. Note that this could take a while because the image contains a large (~5GB) database of TIGER/Line address range files.
 
 #### Single Geocode
