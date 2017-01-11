@@ -21,7 +21,7 @@ The software will return the geocoding result as JSON to stdout:
 [{"street":"Burnet Ave","zip":"45229","city":"Cincinnati","state":"OH","lat":39.14089,"lon":-84.500402,"fips_county":"39061","score":0.949,"prenum":"","number":"3333","precision":"range"}]
 ```
 
-See the original software package (https://bitbucket.org/cole-brokamp/geocoder) for documentation and
+See the original software package (https://github.org/cole-brokamp/geocoder) for documentation and
 interpretation of output.
 
 #### Continuous Geocoding
