@@ -2,6 +2,11 @@ FROM ubuntu:14.04
 
 MAINTAINER Cole Brokamp cole.brokamp@gmail.com
 
+RUN useradd docker \
+  && mkdir /home/docker \
+  && chown docker:docker /home/docker \
+  && addgroup docker staff
+
 RUN apt-get update && apt-get install -y \
     make \
     wget \
