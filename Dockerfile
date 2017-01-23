@@ -34,3 +34,5 @@ COPY . /root/geocoder
 RUN cd /root/geocoder \
     && make install \
     && gem install Geocoder-US-2.0.4.gem
+
+ENTRYPOINT ["/bin/bash", "-c", "ruby /root/geocoder/geocode.rb $1"]
