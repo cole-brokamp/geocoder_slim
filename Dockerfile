@@ -35,6 +35,7 @@ RUN gem install sqlite3
 
 RUN mkdir /root/geocoder
 COPY . /root/geocoder
+RUN chmod +x /root/geocoder/geocode.rb
 
 RUN cd /root/geocoder \
     && make install \
