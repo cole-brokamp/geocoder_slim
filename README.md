@@ -32,3 +32,7 @@ Query the container for a geocode with `docker exec gs ruby /root/geocoder/geoco
 Continue querying the container with more addresses. This can be automated for several addresses using a scripting language.
 
 Stop the container and delete it with `docker stop gs` and `docker rm gs`.
+
+#### R
+
+This process has been wrapped into an R package called `OfflineGeocodeR` and is available at [https://github.com/cole-brokamp/OfflineGeocodeR](https://github.com/cole-brokamp/OfflineGeocodeR).
