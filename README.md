@@ -2,6 +2,8 @@
 
 > This is a slimmed down and Dockerized version of the offline geocoder here: https://github.com/cole-brokamp/geocoder.
 
+## 🛑 **`geocoder_slim` has been deprecated. See [this wiki post](https://github.com/degauss-org/degauss-org.github.io/wiki/Using-DeGAUSS-as-a-Geocoding-API) for how to use DeGAUSS as a Geocoding API, or [`OfflineGeocodeR`](https://github.com/geomarker-io/OfflineGeocodeR) which wraps this process into an R package.** 🛑
+
 #### Install
 
 The image is hosted privately and can be pulled with `docker pull colebrokamp/geocoder_slim`. This requires authorization through the docker command line. Contact the author for access. Note that this could take a while because the image contains a large (~5GB) database of TIGER/Line address range files.
@@ -32,7 +34,3 @@ Query the container for a geocode with `docker exec gs ruby /root/geocoder/geoco
 Continue querying the container with more addresses. This can be automated for several addresses using a scripting language.
 
 Stop the container and delete it with `docker stop gs` and `docker rm gs`.
-
-#### R
-
-This process has been wrapped into an R package called `OfflineGeocodeR` and is available at [https://github.com/cole-brokamp/OfflineGeocodeR](https://github.com/cole-brokamp/OfflineGeocodeR).
